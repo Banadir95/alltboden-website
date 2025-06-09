@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauranger - Bodens Kommun</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/boden_logo_original.png" alt="Bodens Kommun">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="medborgarservice.html">Medborgarservice</a></li>
+                    <li><a href="restauranger.html">Restauranger</a></li>
+                    <li><a href="aktiviteter.html">Aktiviteter & Sevärdheter</a></li>
+                    <li><a href="om-boden.html">Om Boden</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search">
+                    <input type="text" placeholder="Sök...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="login-btn">
+                    <a href="login.html" class="btn">Logga in</a>
+                </div>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Restauranger i Boden</h1>
+                <p>Upptäck Bodens varierade restaurangutbud. Från lokala specialiteter till internationella smaker.</p>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-container">
+                    <div class="filter-group">
+                        <label for="cuisine-filter">Typ av mat:</label>
+                        <select id="cuisine-filter">
+                            <option value="all">Alla typer</option>
+                            <option value="swedish">Svenskt</option>
+                            <option value="italian">Italienskt</option>
+                            <option value="asian">Asiatiskt</option>
+                            <option value="pizza">Pizza</option>
+                            <option value="steakhouse">Steakhouse</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="price-filter">Prisklass:</label>
+                        <select id="price-filter">
+                            <option value="all">Alla prisklasser</option>
+                            <option value="budget">Budget</option>
+                            <option value="medium">Mellan</option>
+                            <option value="exclusive">Exklusivt</option>
+                        </select>
+                    </div>
+                    <div class="search-filter">
+                        <input type="text" placeholder="Sök restaurang...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Restaurants List -->
+        <section class="restaurants-list">
+            <div class="container">
+                <div class="restaurant-item">
+                    <div class="restaurant-image">
+                        <img src="img/restaurant_panelen.jpg" alt="Panelen Steakhouse">
+                    </div>
+                    <div class="restaurant-content">
+                        <h3>Panelen Steakhouse</h3>
+                        <div class="restaurant-info">
+                            <p><strong>Typ:</strong> Steakhouse</p>
+                            <p><strong>Adress:</strong> Kungsgatan 23, Boden</p>
+                            <p><strong>Öppettider:</strong> Mån-Fre 11-22, Lör-Sön 12-23</p>
+                        </div>
+                        <p class="restaurant-description">Vällagade kötträtter i mysig miljö. Panelen Steakhouse erbjuder högkvalitativt kött och en trevlig atmosfär i centrala Boden.</p>
+                        <div class="restaurant-actions">
+                            <a href="#" class="btn">Mer information</a>
+                            <a href="tel:+46921XXXXXX" class="btn btn-outline">Ring</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-item">
+                    <div class="restaurant-image">
+                        <img src="img/restaurant_sushi.jpg" alt="SushiBoden">
+                    </div>
+                    <div class="restaurant-content">
+                        <h3>SushiBoden</h3>
+                        <div class="restaurant-info">
+                            <p><strong>Typ:</strong> Sushi, Asiatiskt</p>
+                            <p><strong>Adress:</strong> Drottninggatan 15, Boden</p>
+                            <p><strong>Öppettider:</strong> Mån-Fre 11-20, Lör 12-20, Sön Stängt</p>
+                        </div>
+                        <p class="restaurant-description">Färsk sushi och asiatiska rätter i modern miljö. SushiBoden erbjuder ett brett utbud av sushi och andra asiatiska specialiteter.</p>
+                        <div class="restaurant-actions">
+                            <a href="#" class="btn">Mer information</a>
+                            <a href="tel:+46921XXXXXX" class="btn btn-outline">Ring</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-item">
+                    <div class="restaurant-image">
+                        <img src="img/restaurant_hemmagastronomi.jpg" alt="Hemmagastronomi">
+                    </div>
+                    <div class="restaurant-content">
+                        <h3>Hemmagastronomi</h3>
+                        <div class="restaurant-info">
+                            <p><strong>Typ:</strong> Svenskt, Gourmet</p>
+                            <p><strong>Adress:</strong> Storgatan 8, Boden</p>
+                            <p><strong>Öppettider:</strong> Tis-Lör 17-22, Mån-Sön Stängt</p>
+                        </div>
+                        <p class="restaurant-description">Hemlagad mat med fokus på lokala råvaror. Hemmagastronomi erbjuder en unik matupplevelse med säsongsbaserade menyer.</p>
+                        <div class="restaurant-actions">
+                            <a href="#" class="btn">Mer information</a>
+                            <a href="tel:+46921XXXXXX" class="btn btn-outline">Ring</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-item">
+                    <div class="restaurant-image">
+                        <img src="img/restaurant_cg.jpg" alt="Restaurang CG">
+                    </div>
+                    <div class="restaurant-content">
+                        <h3>Restaurang CG</h3>
+                        <div class="restaurant-info">
+                            <p><strong>Typ:</strong> Svenskt, Internationellt</p>
+                            <p><strong>Adress:</strong> Kyrkgatan 35, Boden</p>
+                            <p><strong>Öppettider:</strong> Mån-Tor 11-21, Fre-Lör 11-22, Sön 12-20</p>
+                        </div>
+                        <p class="restaurant-description">Klassisk restaurang med brett utbud. Restaurang CG serverar allt från husmanskost till internationella rätter i en trevlig miljö.</p>
+                        <div class="restaurant-actions">
+                            <a href="#" class="btn">Mer information</a>
+                            <a href="tel:+46921XXXXXX" class="btn btn-outline">Ring</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-item">
+                    <div class="restaurant-image">
+                        <img src="img/restaurant_bodensia.jpg" alt="Bodensia">
+                    </div>
+                    <div class="restaurant-content">
+                        <h3>Bodensia</h3>
+                        <div class="restaurant-info">
+                            <p><strong>Typ:</strong> Hotellrestaurang, Svenskt</p>
+                            <p><strong>Adress:</strong> Kungsgatan 47, Boden</p>
+                            <p><strong>Öppettider:</strong> Alla dagar 06:30-22:00</p>
+                        </div>
+                        <p class="restaurant-description">I hjärtat av Boden, på entréplan av hotellet Quality Hotel Bodensia, hittar du Restaurang Bodensia. Restaurangen erbjuder allt från frukost till sena middagar.</p>
+                        <div class="restaurant-actions">
+                            <a href="#" class="btn">Mer information</a>
+                            <a href="tel:+46921XXXXXX" class="btn btn-outline">Ring</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-item">
+                    <div class="restaurant-image">
+                        <img src="img/restaurant_davinci.jpg" alt="Restaurang Da Vinci">
+                    </div>
+                    <div class="restaurant-content">
+                        <h3>Restaurang Da Vinci</h3>
+                        <div class="restaurant-info">
+                            <p><strong>Typ:</strong> Italienskt, Grill</p>
+                            <p><strong>Adress:</strong> Stationsgatan 12, Boden</p>
+                            <p><strong>Öppettider:</strong> Mån-Tor 11-21, Fre-Lör 11-22, Sön 12-20</p>
+                        </div>
+                        <p class="restaurant-description">På restaurang Da Vinci i Boden serveras hängmörat kött samt fiskrätter med influenser från hela världen i mysig atmosfär. Vi grillar på äkta kolgrill.</p>
+                        <div class="restaurant-actions">
+                            <a href="#" class="btn">Mer information</a>
+                            <a href="tel:+46921XXXXXX" class="btn btn-outline">Ring</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-item">
+                    <div class="restaurant-image">
+                        <img src="img/restaurant_dg11.jpg" alt="DG11">
+                    </div>
+                    <div class="restaurant-content">
+                        <h3>DG11 Gastropub</h3>
+                        <div class="restaurant-info">
+                            <p><strong>Typ:</strong> Gastropub, Svenskt</p>
+                            <p><strong>Adress:</strong> Drottninggatan 11, Boden</p>
+                            <p><strong>Öppettider:</strong> Tis-Tor 16-22, Fre-Lör 16-23, Sön-Mån Stängt</p>
+                        </div>
+                        <p class="restaurant-description">Prisbelönt gastropub med fokus på kvalitet. DG11 har valts in i White Guide Sverige och erbjuder en unik matupplevelse med vällagad mat och utvalda drycker.</p>
+                        <div class="restaurant-actions">
+                            <a href="#" class="btn">Mer information</a>
+                            <a href="tel:+46921XXXXXX" class="btn btn-outline">Ring</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-item">
+                    <div class="restaurant-image">
+                        <img src="img/restaurant_apollon.jpg" alt="Apollon Restaurang">
+                    </div>
+                    <div class="restaurant-content">
+                        <h3>Apollon Restaurang</h3>
+                        <div class="restaurant-info">
+                            <p><strong>Typ:</strong> Grill, Internationellt</p>
+                            <p><strong>Adress:</strong> Kungsgatan 19, Boden</p>
+                            <p><strong>Öppettider:</strong> Mån-Tor 11-21, Fre-Lör 11-22, Sön 12-20</p>
+                        </div>
+                        <p class="restaurant-description">Erbjuder en bred och utvecklad meny som sätter grillat i fokus. Ett paradis för alla köttälskare. Apollon Restaurang i Boden är ett självklart val för dig som uppskattar vällagad mat i trevlig miljö.</p>
+                        <div class="restaurant-actions">
+                            <a href="#" class="btn">Mer information</a>
+                            <a href="tel:+46921XXXXXX" class="btn btn-outline">Ring</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p>Bodens kommun<br>
+                    961 86 Boden</p>
+                    <p>Telefon: 0921-620 00<br>
+                    E-post: kommunen@boden.se</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Följ oss</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Viktiga länkar</h3>
+                    <ul>
+                        <li><a href="#">Tillgänglighet</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Personuppgifter</a></li>
+                        <li><a href="#">Lediga jobb</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bodens kommun. Alla rättigheter förbehållna.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
