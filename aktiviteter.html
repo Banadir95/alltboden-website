@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktiviteter & Sevärdheter - Bodens Kommun</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/boden_logo_original.png" alt="Bodens Kommun">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="medborgarservice.html">Medborgarservice</a></li>
+                    <li><a href="restauranger.html">Restauranger</a></li>
+                    <li><a href="aktiviteter.html">Aktiviteter & Sevärdheter</a></li>
+                    <li><a href="om-boden.html">Om Boden</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search">
+                    <input type="text" placeholder="Sök...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="login-btn">
+                    <a href="login.html" class="btn">Logga in</a>
+                </div>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Aktiviteter & Sevärdheter i Boden</h1>
+                <p>Upptäck vad Boden har att erbjuda. Från historiska platser till spännande aktiviteter för hela familjen.</p>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-container">
+                    <div class="filter-group">
+                        <label for="type-filter">Typ:</label>
+                        <select id="type-filter">
+                            <option value="all">Alla typer</option>
+                            <option value="museum">Museum</option>
+                            <option value="outdoor">Utomhusaktivitet</option>
+                            <option value="family">Familjeaktivitet</option>
+                            <option value="culture">Kultur</option>
+                            <option value="history">Historia</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="season-filter">Säsong:</label>
+                        <select id="season-filter">
+                            <option value="all">Alla säsonger</option>
+                            <option value="summer">Sommar</option>
+                            <option value="winter">Vinter</option>
+                            <option value="year-round">Året runt</option>
+                        </select>
+                    </div>
+                    <div class="search-filter">
+                        <input type="text" placeholder="Sök aktivitet...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities List -->
+        <section class="activities-list">
+            <div class="container">
+                <div class="activity-item">
+                    <div class="activity-image">
+                        <img src="img/activity_rodbergsfortet.jpg" alt="Rödbergsfortet">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Rödbergsfortet</h3>
+                        <div class="activity-info">
+                            <p><strong>Typ:</strong> Historia, Museum</p>
+                            <p><strong>Plats:</strong> Rödbergsvägen, Boden</p>
+                            <p><strong>Öppettider:</strong> Maj-Sep: Dagligen 10-16, Okt-Apr: Endast förbokning</p>
+                        </div>
+                        <p class="activity-description">Rödbergsfortet är en del av Bodens fästning och var länge en av Sveriges mest hemliga platser. Anläggningen var känd som "låset i norr" och skulle försvara landet mot Ryssland under 1900-talet. Idag är försvarsanläggningen öppen för besökare och erbjuder guidade visningar av vissa utvalda delar.</p>
+                        <div class="activity-actions">
+                            <a href="#" class="btn">Mer information</a>
+                            <a href="tel:+46921XXXXXX" class="btn btn-outline">Ring</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-image">
+                        <img src="img/activity_westernfarm.jpg" alt="Western Farm">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Western Farm</h3>
+                        <div class="activity-info">
+                            <p><strong>Typ:</strong> Familjeaktivitet, Nöjespark</p>
+                            <p><strong>Plats:</strong> Västernvägen 12, Boden</p>
+                            <p><strong>Öppettider:</strong> Jun-Aug: Dagligen 10-18, Sep-Maj: Endast förbokning</p>
+                        </div>
+                        <p class="activity-description">Western Farm är en nöjespark med boende strax utanför centrala Boden som har Vilda Västern som tema. Under året finns en rad olika aktiviteter och evenemang där man får följa med på en tidsresa till 1800-talets vilda västern.</p>
+                        <div class="activity-actions">
+                            <a href="#" class="btn">Mer information</a>
+                            <a href="tel:+46921XXXXXX" class="btn btn-outline">Ring</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-image">
+                        <img src="img/activity_forsvarsmuseum.jpg" alt="Försvarsmuseum Boden">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Försvarsmuseum Boden</h3>
+                        <div class="activity-info">
+                            <p><strong>Typ:</strong> Museum, Historia</p>
+                            <p><strong>Plats:</strong> Granatvägen 2, Boden</p>
+                            <p><strong>Öppettider:</strong> Tis-Sön 11-16, Mån Stängt</p>
+                        </div>
+                        <p class="activity-description">Försvarsmuseet ligger på Granatvägen 2. Inne på museet finns interaktiva utställningar samt militära fordon och objekt som visas upp. Besöket passar både stora och små som vill lära sig mer om svensk försvarshistoria i övre Norrland.</p>
+                        <div class="activity-actions">
+                            <a href="#" class="btn">Mer information</a>
+                            <a href="tel:+46921XXXXXX" class="btn btn-outline">Ring</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-image">
+                        <img src="img/activity_nordpoolen.jpg" alt="Nordpoolen">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Nordpoolen</h3>
+                        <div class="activity-info">
+                            <p><strong>Typ:</strong> Familjeaktivitet, Bad</p>
+                            <p><strong>Plats:</strong> Idrottsgatan 5, Boden</p>
+                            <p><strong>Öppettider:</strong> Mån-Fre 10-20, Lör-Sön 10-18</p>
+                        </div>
+                        <p class="activity-description">Nordpoolen är ett äventyrsbad i centrala Boden med relaxavdelning och utomhusbad året runt. Här finns också en grotta med strömmande vatten och två vattenrutschbanor.</p>
+                        <div class="activity-actions">
+                            <a href="#" class="btn">Mer information</a>
+                            <a href="tel:+46921XXXXXX" class="btn btn-outline">Ring</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-image">
+                        <img src="img/activity_havremagasinet.jpg" alt="Havremagasinet">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Havremagasinet</h3>
+                        <div class="activity-info">
+                            <p><strong>Typ:</strong> Kultur, Konst</p>
+                            <p><strong>Plats:</strong> Norrbottensvägen 18, Boden</p>
+                            <p><strong>Öppettider:</strong> Tis-Sön 11-17, Mån Stängt</p>
+                        </div>
+                        <p class="activity-description">Havremagasinet är en av Sveriges största konsthallar till ytan som uppgår till 3600 kvadratmeter. Byggnaden var tidigare förvaringsplats för spannmål och hästfoder. Idag är det en plats där samtidskonst visas upp i en rad olika utställningar.</p>
+                        <div class="activity-actions">
+                            <a href="#" class="btn">Mer information</a>
+                            <a href="tel:+46921XXXXXX" class="btn btn-outline">Ring</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-image">
+                        <img src="img/activity_treehotel.jpg" alt="Treehotel i Harads">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Treehotel i Harads</h3>
+                        <div class="activity-info">
+                            <p><strong>Typ:</strong> Boende, Upplevelse</p>
+                            <p><strong>Plats:</strong> Harads, Boden</p>
+                            <p><strong>Öppettider:</strong> Guidade turer dagligen, förbokning krävs</p>
+                        </div>
+                        <p class="activity-description">Treehotel i Harads är ett av Sveriges mest berömda hotell med besökare från hela världen. Följ med på guidad tur av anläggningen och ta chansen att se dessa unika trädhus med egna ögon. Guidad tur bokas i förväg och finns tillgänglig året runt. Turens längd är ungefär 60 minuter.</p>
+                        <div class="activity-actions">
+                            <a href="#" class="btn">Mer information</a>
+                            <a href="tel:+46921XXXXXX" class="btn btn-outline">Ring</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-image">
+                        <img src="img/activity_patinamuseet.jpg" alt="Patinamuseet">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Patinamuseet</h3>
+                        <div class="activity-info">
+                            <p><strong>Typ:</strong> Museum, Nostalgi</p>
+                            <p><strong>Plats:</strong> Granatvägen 10, Boden</p>
+                            <p><strong>Öppettider:</strong> Endast förbokning</p>
+                        </div>
+                        <p class="activity-description">Patinamuseet är ett unikt museum i Boden som inryms i ett gammalt loft på 600 kvadratmeter. Här finns Pelles unika samlingar med nostalgiska objekt från ett helt sekel. Samtliga objekt är orörda sedan sin tid. Förbokning krävs vid besök och görs genom att ringa Pelle på 073-180 83 35.</p>
+                        <div class="activity-actions">
+                            <a href="#" class="btn">Mer information</a>
+                            <a href="tel:+46921180835" class="btn btn-outline">Ring</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-image">
+                        <img src="img/activity_norrsken.jpg" alt="Norrskensjakt">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Norrskensjakt</h3>
+                        <div class="activity-info">
+                            <p><strong>Typ:</strong> Utomhusaktivitet, Upplevelse</p>
+                            <p><strong>Plats:</strong> Olika platser runt Boden</p>
+                            <p><strong>Säsong:</strong> September-Mars</p>
+                        </div>
+                        <p class="activity-description">Norrskenet lockar besökare från hela världen och under vinterhalvåret är det möjligt att se detta ljusfenomen i Norrland. Antingen kan man åka ut på egen hand eller följa med på en guidad norrskenstur. Arctic Adventure är ett av företagen som erbjuder norrskensturer i området.</p>
+                        <div class="activity-actions">
+                            <a href="#" class="btn">Mer information</a>
+                            <a href="tel:+46921XXXXXX" class="btn btn-outline">Ring</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p>Bodens kommun<br>
+                    961 86 Boden</p>
+                    <p>Telefon: 0921-620 00<br>
+                    E-post: kommunen@boden.se</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Följ oss</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Viktiga länkar</h3>
+                    <ul>
+                        <li><a href="#">Tillgänglighet</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Personuppgifter</a></li>
+                        <li><a href="#">Lediga jobb</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bodens kommun. Alla rättigheter förbehållna.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

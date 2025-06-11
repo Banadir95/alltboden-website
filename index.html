@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodens Kommun - Digital Medborgarplattform</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/boden_logo_original.png" alt="Bodens kommun" class="logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="medborgarservice.html">E-tjänster</a></li>
+                    <li><a href="restauranger.html">Restauranger</a></li>
+                    <li><a href="aktiviteter.html">Aktiviteter</a></li>
+                    <li><a href="om-boden.html">Om Boden</a></li>
+                    <li><a href="evenemang.html">Evenemang</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="language-selector">
+                    <select id="language-select" onchange="changeLanguage()">
+                        <option value="sv">Svenska</option>
+                        <option value="en">English</option>
+                        <option value="fi">Suomi</option>
+                        <option value="ar">العربية</option>
+                        <option value="fa">فارسی</option>
+                    </select>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Sök på Boden.se">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="header-links">
+                    <a href="anslagstavla.html">Anslagstavla</a>
+                    <a href="driftinfo.html">Driftinfo</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+                <div class="login-btn">
+                    <a href="login.html" class="btn">Logga in</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Välkommen till Bodens kommun</h1>
+                <p>Din samlade digitala plattform för medborgarservice, restauranger och aktiviteter</p>
+                <div class="quick-links">
+                    <a href="medborgarservice.html" class="btn btn-large">E-tjänster</a>
+                    <a href="restauranger.html" class="btn btn-large">Restauranger</a>
+                    <a href="aktiviteter.html" class="btn btn-large">Aktiviteter</a>
+                    <a href="evenemang.html" class="btn btn-large">Evenemang</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Categories (like boden.se) -->
+        <section class="main-categories">
+            <div class="container">
+                <h2>Huvudkategorier</h2>
+                <div class="category-grid-main">
+                    <div class="category-card-main boende">
+                        <div class="icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Boende & trafik</h3>
+                        <p>Bygglov, parkering, kollektivtrafik och infrastruktur</p>
+                        <a href="boende-trafik.html" class="btn">Läs mer</a>
+                    </div>
+                    <div class="category-card-main utbildning">
+                        <div class="icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Förskola & utbildning</h3>
+                        <p>Förskola, grundskola, gymnasium och vuxenutbildning</p>
+                        <a href="utbildning.html" class="btn">Läs mer</a>
+                    </div>
+                    <div class="category-card-main samhalle">
+                        <div class="icon">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <h3>Samhälle & utveckling</h3>
+                        <p>Samhällsplanering, miljö och hållbar utveckling</p>
+                        <a href="samhalle.html" class="btn">Läs mer</a>
+                    </div>
+                    <div class="category-card-main omsorg">
+                        <div class="icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Stöd & omsorg</h3>
+                        <p>Äldreomsorg, funktionsnedsättning och socialt stöd</p>
+                        <a href="omsorg.html" class="btn">Läs mer</a>
+                    </div>
+                    <div class="category-card-main politik">
+                        <div class="icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h3>Kommun & politik</h3>
+                        <p>Kommunfullmäktige, nämnder och politiska beslut</p>
+                        <a href="politik.html" class="btn">Läs mer</a>
+                    </div>
+                    <div class="category-card-main webb">
+                        <div class="icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Våra webbplatser</h3>
+                        <p>Länkar till kommunens olika webbplatser och tjänster</p>
+                        <a href="webbplatser.html" class="btn">Läs mer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hitta direkt (Quick Access) -->
+        <section class="quick-access">
+            <div class="container">
+                <h2>Hitta direkt</h2>
+                <p>Här hittar du våra mest besökta sidor just nu.</p>
+                <div class="quick-access-grid">
+                    <a href="international-school.html" class="quick-link">International School</a>
+                    <a href="gymnasium.html" class="quick-link">Gymnasium</a>
+                    <a href="forskola.html" class="quick-link">Förskola</a>
+                    <a href="elevhalsa.html" class="quick-link">Elevhälsa</a>
+                    <a href="kulturskolan.html" class="quick-link">Kulturskolan</a>
+                    <a href="information.html" class="quick-link">Information</a>
+                    <a href="grundskolor.html" class="quick-link">Våra kommunala grundskolor</a>
+                    <a href="applications.html" class="quick-link">Applications</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mitt Boden App -->
+        <section class="mitt-boden">
+            <div class="container">
+                <div class="app-info">
+                    <div class="app-text">
+                        <h2>Mitt Boden</h2>
+                        <p>Ladda ner Bodens kommuns app Mitt Boden!</p>
+                        <p>I appen hittar du information om kultur- och föreningsliv, flytta till Boden och samhällsomställningen.</p>
+                        <a href="#" class="btn btn-large">Ladda ner appen</a>
+                    </div>
+                    <div class="app-features">
+                        <div class="feature">
+                            <h3>Kultur- och föreningsliv</h3>
+                            <p>Upptäck evenemang och aktiviteter i Boden</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Flytta till Boden</h3>
+                            <p>Information för dig som vill flytta hit</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Samhällsomställningen</h3>
+                            <p>Följ Bodens utveckling och framtid</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aktuellt i Boden (News) -->
+        <section class="news">
+            <div class="container">
+                <h2>Aktuellt i Boden</h2>
+                <div class="news-grid">
+                    <article class="news-item">
+                        <img src="img/news1.jpg" alt="Kommunhuset">
+                        <div class="news-content">
+                            <span class="date">2025-06-05</span>
+                            <h3>Spela tennis vid Bodens Energi Arena</h3>
+                            <p>Sugen på en tennismatch? Precis intill Bodens Energi Arena hittar du två fina tennisbanor med hard court-underlag.</p>
+                            <a href="#" class="btn">Läs mer</a>
+                        </div>
+                    </article>
+                    <article class="news-item">
+                        <img src="img/news2.jpg" alt="Boden Alive">
+                        <div class="news-content">
+                            <span class="date">2025-06-05</span>
+                            <h3>Tomtsläpp i Boden – villatomter</h3>
+                            <p>Klockan 9.00 den 13 maj släpper Bodens kommun två attraktiva villatomter på Stjärnfallsvägen och Sommarstigen.</p>
+                            <a href="#" class="btn">Läs mer</a>
+                        </div>
+                    </article>
+                    <article class="news-item">
+                        <img src="img/news3.jpg" alt="Ny restaurang">
+                        <div class="news-content">
+                            <span class="date">2025-06-04</span>
+                            <h3>Nyckelrekrytering för samhällsomställning</h3>
+                            <p>Bodens kommun har rekryterat en ny utvecklingschef och biträdande kommunchef för samhällsomställningen.</p>
+                            <a href="#" class="btn">Läs mer</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="news-more">
+                    <a href="nyheter.html" class="btn btn-large">Visa alla nyheter</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Populära e-tjänster -->
+        <section class="popular-services">
+            <div class="container">
+                <h2>Populära e-tjänster</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3>Bygglov</h3>
+                        <p>Ansök om bygglov för ditt projekt</p>
+                        <a href="#" class="btn">Till tjänsten</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <h3>Avfallshantering</h3>
+                        <p>Hantera ditt avfallsabonnemang</p>
+                        <a href="#" class="btn">Till tjänsten</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h3>Förskola</h3>
+                        <p>Ansök om plats på förskola</p>
+                        <a href="#" class="btn">Till tjänsten</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>Felanmälan</h3>
+                        <p>Rapportera fel i kommunen</p>
+                        <a href="#" class="btn">Till tjänsten</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Utvalda restauranger & aktiviteter -->
+        <section class="featured">
+            <div class="container">
+                <h2>Utvalda restauranger & aktiviteter</h2>
+                <div class="featured-grid">
+                    <div class="featured-item">
+                        <img src="img/restaurant_panelen.jpg" alt="Panelen Steakhouse">
+                        <div class="featured-content">
+                            <h3>Panelen Steakhouse</h3>
+                            <p>Vällagade kötträtter i mysig miljö</p>
+                            <div class="featured-actions">
+                                <a href="#" class="btn">Läs mer</a>
+                                <button class="btn btn-booking" onclick="bookTable('panelen')">Boka bord</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-item">
+                        <img src="img/activity_rodbergsfortet.jpg" alt="Rödbergsfortet">
+                        <div class="featured-content">
+                            <h3>Rödbergsfortet</h3>
+                            <p>Upptäck Bodens historiska fästning</p>
+                            <div class="featured-actions">
+                                <a href="#" class="btn">Läs mer</a>
+                                <button class="btn btn-booking" onclick="bookTicket('rodbergsfortet')">Köp biljett</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-item">
+                        <img src="img/restaurant_sushi.jpg" alt="SushiBoden">
+                        <div class="featured-content">
+                            <h3>SushiBoden</h3>
+                            <p>Färsk sushi och asiatiska rätter</p>
+                            <div class="featured-actions">
+                                <a href="#" class="btn">Läs mer</a>
+                                <button class="btn btn-booking" onclick="bookTable('sushiboden')">Boka bord</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-item">
+                        <img src="img/activity_nordpoolen.jpg" alt="Nordpoolen">
+                        <div class="featured-content">
+                            <h3>Nordpoolen</h3>
+                            <p>Äventyrsbad för hela familjen</p>
+                            <div class="featured-actions">
+                                <a href="#" class="btn">Läs mer</a>
+                                <button class="btn btn-booking" onclick="bookTicket('nordpoolen')">Köp biljett</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Affärsmöjligheter -->
+        <section class="business">
+            <div class="container">
+                <h2>Affärsmöjligheter</h2>
+                <div class="business-grid">
+                    <div class="business-card">
+                        <div class="icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3>Annonsera</h3>
+                        <p>Nå ut till Bodens invånare och besökare genom att annonsera på vår plattform.</p>
+                        <a href="#" class="btn">Läs mer</a>
+                    </div>
+                    <div class="business-card premium">
+                        <div class="icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Premium-listning</h3>
+                        <p>Få ditt företag att synas högst upp i listningar och sökresultat.</p>
+                        <a href="#" class="btn">Läs mer</a>
+                    </div>
+                    <div class="business-card">
+                        <div class="icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>Bokningssystem</h3>
+                        <p>Låt kunder boka dina tjänster direkt via vår plattform.</p>
+                        <a href="#" class="btn">Läs mer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p>Bodens kommun</p>
+                    <p>961 86 Boden</p>
+                    <p>Telefon: 0921-69 10 00</p>
+                    <p>E-post: kommun@boden.se</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Snabblänkar</h3>
+                    <ul>
+                        <li><a href="medborgarservice.html">E-tjänster</a></li>
+                        <li><a href="evenemang.html">Evenemang</a></li>
+                        <li><a href="anslagstavla.html">Anslagstavla</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Följ oss</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Språk</h3>
+                    <select id="footer-language-select" onchange="changeLanguage()">
+                        <option value="sv">Svenska</option>
+                        <option value="en">English</option>
+                        <option value="fi">Suomi</option>
+                        <option value="ar">العربية</option>
+                        <option value="fa">فارسی</option>
+                    </select>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bodens kommun. Alla rättigheter förbehållna.</p>
+                <div class="footer-links">
+                    <a href="integritet.html">Integritetspolicy</a>
+                    <a href="tillganglighet.html">Tillgänglighet</a>
+                    <a href="cookies.html">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
